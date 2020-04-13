@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="/styleSolutions.css">
+
+</head>
+<body>
+    
+    <div id = "inputData">
+        <h1>PROGRESS CARD GENERATOR</h1>
+        <form action="#">
+            <label for="Name">Enter Student Name</label><br>
+            <input type="text" id = "name"><br>
+            <label for="">Enter Class</label><br>
+            <input type="text" id="class"><br>
+            <label for="">Enter roll number</label><br>
+            <input type="text"  id="rollNo"><br>
+            <label for="">Mark obtained in subject-1</label><br>
+            <input type="number"  id="mark1">/100<br>
+            <label for="">Mark obtained in subject-2</label><br>
+            <input type="number"  id="mark2">/100<br>
+            <label for="">Mark obtained in subject-3</label><br>
+            <input type="number"  id="mark3">/100<br>
+            <p>Click the button below to create Percentage Card</p>
+            <button onclick="calcPercentage();">Generate Card</button>
+          </form>
+          <!--Use the data from above input fileds to generate a card -->
+    </div>
+
+<div id="showReport" hidden=true>
+
+    <h1>Percentage Card</h1>
+    <div id="showPercent">
+        <span>The Percentage obtained by your ward </span>
+        <label for="Name" id="outName"></label>
+        <span>of class </span>
+        <label for="class" id="outClass"></label>
+        <span>is </span>
+        <label for="percentage" id="percentage"></label>
+    </div>    
+</div>
+
+
+
+<script src="script.js"></script>
+      </body> 
+
+</html>
